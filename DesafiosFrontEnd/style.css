@@ -185,13 +185,54 @@ header {
 
 /* === MODAL === */
 
-
-/* .modal-overlay {
-    background-color: white;
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     opacity: 0;
     visibility: hidden;
-} */
+}
+
+.modal {
+    background-color: white;
+    width: 85%;
+    height: 85%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.maximize-modal,
+.minimize-modal,
+.close-modal {
+    color: black;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* === MODAL ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+
+/* === MODAL MAXIMIZE === */
+
+.maximize {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
