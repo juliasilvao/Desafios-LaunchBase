@@ -7,10 +7,8 @@
 
 <p>Aqui você pode encontrar os desafios do bootcamp LaunchBase da fase 02 feitos por mim.</p>
 
-## Recursos
+## Linguagens utilizadas
 [//]: # (Add the features of your project here:)
-Linguagens utilizadas:
-
 - **JavaScript**
 - **HTML**
 - **CSS**
