@@ -88,24 +88,31 @@ header {
 .content {
     text-align: center;
     padding: 30px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .content img {
     border-radius: 50%;
     border: 3px solid var(--color-yellow);
     margin-bottom: 32px;
-    height: 250px;
+    height: 300px;
     position: relative;
 }
 
 .content h1 {
-    font-size: 40px;
+    font-size: 44px;
     line-height: 52px;
     font-weight: bold;
 }
 
+.content #infos {
+    padding: 50px;
+}
+
 .content h2 {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 34px;
     font-weight: normal;
     opacity: 0.8;
@@ -114,7 +121,7 @@ header {
 }
 
 .content p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
     font-weight: normal;
     opacity: 0.8;
@@ -124,7 +131,7 @@ header {
 }
 
 .content ul {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
     font-weight: normal;
     opacity: 0.8;
