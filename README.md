@@ -14,9 +14,9 @@ Linguagens utilizadas:
 - **JavaScript**
 - **HTML**
 - **CSS**
-<hr />
 
 ## Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://opensource.org/licenses/MIT) para mais detalhes.
 
+<hr />
 Feito por Julia Oliveira.
