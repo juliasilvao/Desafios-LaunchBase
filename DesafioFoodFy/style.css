@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #111111;
+}
+
+nav img {
+    margin: 36px 0 0 231px;
+    width: 90.6px;
+    height: 26.9px;
+}
+
+nav a {
+    font-size: 16px;
+    color: #111111;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 19px;
+}
+
+#about {
+    margin: 38px 0 0 122px;
+}
+
+#recipes {
+    margin: 38px 0 0 30px;
+}
+
+.folder {
+    background: #FBDFDB;
+    border-radius: 30px;
+    width: 940px;
+    height: 366px;
+    margin: 36px 230px;
+    display: flex;
+}
+
+.folder h1 {
+    font-size: 32px;
+    padding: 110px 0 0px 60px;
+    max-width: 305px;
+}
+
+.folder p {
+    opacity: 0.7;
+    font-size: 18px;
+    color: #000000;
+    line-height: 28px;
+    max-width: 316px;
+    padding: 10px 0 117px 60px;
+}
+
+.folder img {
+    width: 216px;
+    height: 300px;
+    margin: 66px 0 0 248px;
+}
+
+main h1 {
+    font-size: 24px;
+    margin: 50px 0 0 230px;
+    line-height: 28px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 230px;
+    gap: 20px;
+}
+
+.card img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+.card p.title {
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    color: #111111;
+    padding: 20px 0 5px 0;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+    padding: 0 0 10px 0;
+}
+
+footer {
+    background: #EEEEEE;
+    height: 62px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding: 23px 0;
+}
