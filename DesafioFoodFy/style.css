@@ -23,13 +23,29 @@ nav a {
     line-height: 19px;
 }
 
-#about {
+#nav-about {
     margin: 38px 0 0 122px;
 }
 
-#recipes {
+#nav-recipes {
     margin: 38px 0 0 30px;
 }
+
+footer {
+    background: #EEEEEE;
+    height: 62px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding: 23px 0;
+}
+
+
+/* === INDEX === */
 
 .folder {
     background: #FBDFDB;
@@ -61,7 +77,7 @@ nav a {
     margin: 66px 0 0 248px;
 }
 
-main h1 {
+#index h1 {
     font-size: 24px;
     margin: 50px 0 0 230px;
     line-height: 28px;
@@ -83,7 +99,6 @@ main h1 {
 .card p.title {
     font-size: 18px;
     line-height: 21px;
-    font-style: normal;
     color: #111111;
     padding: 20px 0 5px 0;
 }
@@ -95,15 +110,97 @@ main h1 {
     padding: 0 0 10px 0;
 }
 
-footer {
-    background: #EEEEEE;
-    height: 62px;
-    width: 100%;
+
+/* === ABOUT === */
+
+#about {
+    margin: 50px 0 0 230px;
 }
 
-footer p {
-    font-size: 14px;
+#about h1 {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+
+#about h2 {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    max-width: 940px;
+    max-height: 280px;
+    padding-bottom: 30px;
+}
+
+#recipes {
+    margin-top: 56px;
+}
+
+
+/* === MODAL === */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    max-width: 660px;
+    height: 413px;
+    border-radius: 16px;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.close-modal {
+    font-size: 16px;
     color: #999999;
+    cursor: pointer;
     text-align: center;
-    padding: 23px 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.modal-content img {
+    border-radius: 40px;
+    width: 600px;
+    height: 200px;
+    padding: 30px 30px 0 30px;
+    align-items: center;
+}
+
+.modal-content p#modal-title {
+    font-size: 24px;
+    line-height: 21px;
+    color: #111111;
+    padding: 20px 0 5px 0;
+    text-align: center;
+}
+
+.modal-content p {
+    font-size: 18px;
+    line-height: 16px;
+    color: #777777;
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+
+
+/* === MODAL ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
