@@ -96,7 +96,7 @@ footer p {
     border-radius: 15px;
 }
 
-.card p.title {
+.card p#title {
     font-size: 18px;
     line-height: 21px;
     color: #111111;
