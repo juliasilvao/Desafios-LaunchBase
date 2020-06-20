@@ -10,49 +10,21 @@
     </div>
 
     <section class="cards">
-
-        <div class="card" id="starter">
-            <div class="card__content-space">
-                <div class="card__image-title">
-                    <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="Starter">
-                    <p>Curso Starter</p>
-                </div>
-                <div class="card__info">
-                    <p>10 módulos</p>
-                    <p class="info">Cursos 100% online e gratuitos para você entrar com o pé direito nas tecnologias mais desejadas do mercado.</p>
-                    <p class="card__price">Free</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="launchbase">
-            <div class="card__content-space">
-                <div class="card__image-title">
-                    <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="Launchbase">
-                    <p>Bootcamp Launchbase</p>
-                </div>
-                <div class="card__info">
-                    <p>15 módulos</p>
-                    <p class="info">Domine o desenvolvimento web do zero e acelere na direção dos seus objetivos.</p>
-                    <p class="card__price">Free</p>
+        {% for item in items %}
+            <div class="card" id="{{item.id}}">
+                <div class="card__content-space">
+                    <div class="card__image-title">
+                        <img src="{{item.image_url}}" alt="Imagem do {{item.title}}">
+                        <p>{{item.title}}</p>
+                    </div>
+                    <div class="card__info">
+                        <p>{{item.modules}}</p>
+                        <p class="info">{{item.description}}</p>
+                        <p class="card__price">{{item.price}}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="card" id="gostack">
-            <div class="card__content-space">
-                <div class="card__image-title">
-                    <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="GoStack">
-                    <p>Bootcamp GoStack</p>
-                </div>
-                <div class="card__info">
-                    <p>20 módulos</p>
-                    <p class="info">Domine o back-end, o front-end e o mobile através do método que vai te guiar direto ao ponto na direção dos seus objetivos</p>
-                    <p class="card__price">Free</p>
-                </div>
-            </div>
-        </div>
-
+        {% endfor %}
     </section>
 
     <div class="modal-overlay">

@@ -4,28 +4,27 @@
 {% endblock %}
 
 {% block content %}
-<div class="content">
-    <div id="title">
-        <img src="https://avatars1.githubusercontent.com/u/28929274?s=280&v=4" alt="">
-        <h1>Rocketseat</h1>
+    <div class="content">
+        <div id="title">
+            <img src="{{about.avatar_url}}" alt="Imagem da {{about.company}}">
+            <h1>{{about.company}}</h1>
+        </div>
+        <div id="infos">
+            <h2>{{about.description}}</h2>
+            <p>
+                {{about.info}}
+            </p>
+            <ul>
+                {% for stack in about.stacks %}
+                    <li>{{stack.name}}</li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
-    <div id="infos">
-        <h2>Transforme sua carreira e seja um programador desejado no mercado, dominando as ferramentas mais modernas de desenvolvimento web e mobile utlizando as tecnologias mais desejadas no mercado</h2>
-        <p>
-            OminiStack:
-        </p>
-        <ul>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>ReactJS</li>
-            <li>React Native</li>
-        </ul>
-    </div>
-</div>
 
-<div id="links-footer" class="links" style="margin-bottom: 20px;">
-    <a href="https://github.com/Rocketseat" target="_blank">GitHub</a>
-    <a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/rocketseat/" target="_blank">Facebook</a>
-</div>
+    <div id="links-footer" class="links" style="margin-bottom: 20px;">
+        {% for link in about.links %}
+            <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+        {% endfor %}
+    </div>
 {% endblock %}
