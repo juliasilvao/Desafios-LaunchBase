@@ -1,0 +1,50 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Receitas - Foodfy</title>
+    <style>
+        .nav-recipes {
+            font-weight: bold;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <main id="recipes">
+        <section class="cards">
+
+            {% for item in items %}
+                <div class="card" id="burger">
+                    <img src="{{item.image}}" alt="{{item.title}}">
+                    <p id="title">{{item.title}}</p>
+                    <p id="chef">por
+                        {{item.author}}</p>
+                </div>
+            {% endfor %}
+
+            {% for item in items %}
+                <div class="card" id="burger">
+                    <img src="{{item.image}}" alt="{{item.title}}">
+                    <p id="title">{{item.title}}</p>
+                    <p id="chef">por
+                        {{item.author}}</p>
+                </div>
+            {% endfor %}
+
+        </section>
+    </main>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <img src="" alt="">
+                <p id="modal-title"></p>
+                <p id="modal-chef"></p>
+            </div>
+
+            <p class="close-modal">Fechar Modal</p>
+        </div>
+    </div>
+
+{% endblock %}
