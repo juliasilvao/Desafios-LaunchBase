@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        {% block head %}
+            <title>High School</title>
+        {% endblock %}
+        <link rel="stylesheet" href="/style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">Teachers</a>
+                <a href="/students">Students</a>
+            </div>
+        </header>
+
+        {% block content%}
+            {% endblock%}
+
+        </body>
+
+    </html>
