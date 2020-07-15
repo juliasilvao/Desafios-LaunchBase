@@ -5,13 +5,14 @@
 <br>
 </h1>
 
-<p>Aqui você pode encontrar os desafios do bootcamp LaunchBase da fase 02 feitos por mim.</p>
+<p>Aqui você pode encontrar os desafios do bootcamp LaunchBase feitos por mim.</p>
 
 ## Linguagens utilizadas
 [//]: # (Add the features of your project here:)
 - **JavaScript**
 - **HTML**
 - **CSS**
+- **Node.js**
 
 ## Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://opensource.org/licenses/MIT) para mais detalhes.
