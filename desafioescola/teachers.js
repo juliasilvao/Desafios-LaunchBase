@@ -11,11 +11,28 @@ exports.post = function(req, res) {
             return res.send("Por favor preencha todos os campos!")
     }
 
-    return res.send(key)
+    let { avatar_url, name, birth, education_level, type_of_class, occupation_area } = req.body
 
-    // fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
-    //     if (err) return res.send("Write file erro")
+    birth = Date.parse(birth)
+    const created_at = Date.now()
+    const id = Number(data.teachers.length + 1)
 
-    //     return res.redirect("teachers")
-    // })
+    data.teachers.push({
+        id,
+        avatar_url,
+        name,
+        birth,
+        education_level,
+        type_of_class,
+        occupation_area,
+        created_at
+    })
+
+    // return res.send(key)
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+        if (err) return res.send("Write file erro")
+
+        return res.redirect("/teachers")
+    })
 }

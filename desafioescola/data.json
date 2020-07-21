@@ -1,0 +1,13 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Julia Silva",
+      "birth": 864604800000,
+      "education_level": "Doctorate degree",
+      "type_of_class": "Presential",
+      "occupation_area": "Matemática avançada",
+      "created_at": 1595335466515
+    }
+  ]
+}
